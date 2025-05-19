@@ -1,0 +1,23 @@
+﻿{
+    "name":  "@progestionsoft/core",
+    "version":  "0.0.2",
+    "private":  true,
+    "description":  "Package central contenant les configurations des composables ProGestionSoft",
+    "author":  "Pro Gestion Soft",
+    "license":  "MIT",
+    "main":  "dist/index.js",
+    "module":  "dist/index.mjs",
+    "types":  "dist/index.d.ts",
+    "scripts":  {
+                    "build":  "tsup src/index.ts --format cjs,esm --dts",
+                    "lint":  "eslint src --ext .ts,.tsx"
+                },
+    "peerDependencies":  {
+                             "vue":  "^3.0.0"
+                         },
+    "repository":  {
+                       "url":  "git+https://github.com/ProGestionSoft/ui-kit.git",
+                       "directory":  "packages/core",
+                       "type":  "git"
+                   }
+}

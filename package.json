@@ -1,0 +1,24 @@
+{
+  "name": "ui-kit",
+  "private": true,
+  "author": "Pro Gestion Soft",
+  "license": "MIT",
+  "scripts": {
+    "build": "pnpm --parallel -r run build",
+    "lint": "pnpm -r run lint",
+    "test": "pnpm -r run test",
+    "prepare": "husky install",
+    "dev": "pnpm --filter ./examples/nuxt-demo dev",
+    "publish:npm": "pnpm -r publish",
+    "publish:github": "powershell -ExecutionPolicy Bypass -File ./publish-github.ps1",
+    "publish:all": "powershell -ExecutionPolicy Bypass -File ./publish-all-registries.ps1"
+  },
+  "devDependencies": {
+  "eslint": "^8.0.0",
+  "husky": "^8.0.0",
+  "pnpm": "^10.11.0",
+  "typescript": "^5.0.0",
+  "tsup": "^8.5.0"
+},
+  "packageManager": "pnpm@10.11.0"
+}

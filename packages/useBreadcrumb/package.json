@@ -1,0 +1,44 @@
+﻿{
+    "name":  "@progestionsoft/use-breadcrumb",
+    "version":  "0.0.2",
+    "description":  "Composable Vue pour la navigation",
+    "main":  "dist/index.js",
+    "module":  "dist/index.mjs",
+    "types":  "dist/index.d.ts",
+    "files":  [
+                  "dist",
+                  "README.md"
+              ],
+    "scripts":  {
+                    "build":  "tsup src/index.ts --format cjs,esm --dts",
+                    "clean":  "rm -rf dist",
+                    "lint":  "eslint src --ext .ts,.tsx",
+                    "typecheck":  "tsc --noEmit",
+                    "prepack":  "npm run build"
+                },
+    "peerDependencies":  {
+                             "vue":  "^3.3.0",
+                             "nuxt":  "^3.0.0"
+                         },
+    "devDependencies":  {
+                            "@progestionsoft/core":  "workspace:^"
+                        },
+    "keywords":  [
+                     "vue",
+                     "nuxt",
+                     "breadcrumb",
+                     "navigation",
+                     "composable"
+                 ],
+    "author":  "Pro Gestion Soft",
+    "license":  "MIT",
+    "publishConfig":  {
+                          "registry":  "https://npm.pkg.github.com",
+                          "access":  "public"
+                      },
+    "repository":  {
+                       "url":  "git+https://github.com/ProGestionSoft/ui-kit.git",
+                       "directory":  "packages/useBreadcrumb",
+                       "type":  "git"
+                   }
+}
